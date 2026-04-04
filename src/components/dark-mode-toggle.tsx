@@ -33,7 +33,7 @@ const Toggle = () => {
     <div>
       <button
         onClick={toggleTheme}
-        className="flex items-center justify-center size-8  bg-amber-00 border border-neutral-500 rounded-lg">
+        className="flex items-center justify-center size-8  bg-amber-00 border border-neutral-500 rounded-lg relative">
         
         <SunIcon className="size-6 absolute  shrink-0  bg dark:scale-0 scale-100 dark:rotate-90 transition-all duration-300"/>
         <MoonIcon className="size-5 absolute  dark:scale-100 scale-0 dark:rotate-0 rotate-45 transform-all duration-300" />
