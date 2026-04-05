@@ -13,21 +13,21 @@ const Navbar = () => {
 
   return (
     <div className="bg-neutral-00 my-0 border-b border-neutral-200 dark:border-neutral-800">
-      <Container className="py-4 px-4 flex justify-between">
+      <Container className="py-4 px-4 xl:px-1 flex justify-between">
         <Logo />
         <div className="flex bg-amber-00  items-center gap-8">
           {navLinkks.map((link, index) => (
             <Link
               key={index}
               href={''}
-              className="text-sm text-neutral-700 dark:text-neutral-400 font-medium font-display "
+              className="text-sm text-neutral-700  dark:text-neutral-400 font-medium font-display "
             >
               {link.name}
             </Link>
           ))}
         </div>
         <div className="flex items-center gap-4">
-          <Button variant="secondary">Login</Button>
+          <Button variant="border">Login</Button>
           <Button variant="primary">Signup</Button>
         </div>
       </Container>

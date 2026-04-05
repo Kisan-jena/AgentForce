@@ -1,20 +1,12 @@
 import React from 'react'
-import Toggle from '../components/dark-mode-toggle';
-import Navbar from '../components/navbar';
+import Hero from '../components/hero';
 
-
-
-const page = () => {
+const Home = () => {
   return (
-    <div className="min-h-screen font-display">
-      <Toggle />
-      
-      <p className="font-inter">
-        
-        Agents that do the work. Approvals that keep you safe.
-      </p>
+    <div className="min-h-screen">
+      <Hero />
     </div>
-  );
+  )
 }
 
-export default page
+export default Home

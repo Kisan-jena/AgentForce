@@ -4,9 +4,12 @@ import { SVGProps } from 'react';
 
 export const Logo = ({ className }: { className?: string }) => {
   return (
-    <Link href="/" className={cn('flex items-center gap-1', className)}>
-      <LogoIcon />
-      <span className="font-display font-extralight tracking-[0.05em] text-sm text-neutral-600 dark:text-neutral-200">
+    <Link href="/" className={cn('flex items-center bg-amber-00 gap-1', className)}>
+      <div className='bg-amber-00 mb-[0.5px]'>
+        <LogoIcon />
+      </div>
+      
+      <span className="font-display font-extralight tracking[0.05em] text-sm text-neutral-600 dark:text-neutral-200">
         Agenforce
       </span>
     </Link>
