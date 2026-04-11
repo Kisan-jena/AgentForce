@@ -6,7 +6,7 @@ const Container = ({ className, children }: {
   children: React.ReactNode;
 }) => {
   return (
-    <div className={cn("max-w-7xl bg-blue-00 mx-auto",className)}>
+    <div className={cn(" max-w-7xl mx-auto", className)}>
       {children}
     </div>
   )

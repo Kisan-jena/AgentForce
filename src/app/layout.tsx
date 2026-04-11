@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter, Manrope } from 'next/font/google';
+import { Navbar } from '../components/navbar';
 import { ProviderTheme } from '../providers/theme-provider';
 import './globals.css';
-import Navbar from '../components/navbar';
 
 const manrope = Manrope({
   variable: '--font-manrope',
@@ -36,7 +36,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar/>
+          <Navbar />
+          {/* <Toggle/> */}
           <main className="bg-background  text-foreground">{children}</main>
         </ProviderTheme>
       </body>

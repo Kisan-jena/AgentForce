@@ -8,12 +8,12 @@ import LandingImage from './landing-image';
 
 const Hero = () => {
   return (
-    <div className="bg-amber-00 pt-10 md:pt-20 lg:pt-32 px-4 xl:px-0">
+    <div className="pt-10 md:pt-20 lg:pt-32 px-4 xl:px-0">
       <Container>
-        <Heading as="h1" className="bg-amber-00 ">
+        <Heading as="h1">
           Agents that do the work <br /> Approvals that keep you safe.
         </Heading>
-        <SubHeading className="py-8 bg-amber-00">
+        <SubHeading className="py-8">
           Deploy AI agents that plan, act through your tools, and report
           outcomes-without changing how your teams work.
         </SubHeading>
