@@ -7,10 +7,10 @@ import { cn } from '../../lib/utils';
 const LandingImage = () => {
   return (
     <div className="relative bg-amber-00 ">
-      {/* <div className="absolute inset-x-0 mask-t-from-10% w-full h-full"></div> */}
-      <div className="relative min-h-72 sm:min-h-80 md:min-h-100 lg:min-h-140 w-full perspective-distant pt-20 pl-8 lg:pl-20 overflow-hidden md:overflow-visible md:translate-x-20">
+      <div className="absolute inset-x-0 mask-t-from-10% w-full h-full"></div>
+      <div className="relative min-h-72 sm:min-h-80 md:min-h-100 lg:min-h-140 w-full perspective-distant pt-20 pl-8 lg:pl-20 overflow-hidden md:overflow-visible md:[clip-path:inset(-200vw_-200vw_0_-200vw)] bg-amber-00 md:translate-x-20">
         <motion.div
-          className="perspective-[4000px]"
+          className="perspective-[4000px] shadow-2xl"
           initial={{
             opacity: 0,
             y: -100,
@@ -76,7 +76,7 @@ const LandingImage = () => {
           />
         </motion.div>
       </div>
-      {/* <div className="absolute inset-x-0 bottom-0 h-40 md:h-100 w-full mask-t-from-10% bg-background z-50"></div> */}
+      <div className="absolute inset-x-0 bottom-0 h-32 md:h-64 w-full bg-linear-to-t bg-amber-00 from-background to-transparent pointer-events-none z-50"></div>
     </div>
   );
 };
