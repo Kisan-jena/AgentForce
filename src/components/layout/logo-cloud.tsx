@@ -22,20 +22,23 @@ const LogoCloud = () => {
           From pilot to scale without chaos.
         </span>
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 max-w-3xl bg-amber-0 py-10 mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 max-w-3xl bg-amber-0 mt-10 mx-auto">
         {logos.map((logo, index) => (
           <motion.div
             initial={{
               opacity: 0,
-              y: -8,
+              y: -10,
+              filter: 'blur(10px)',
             }}
-            animate={{
+            whileInView={{
               opacity: 1,
               y: 0,
+              filter: 'blur(0px)',
             }}
             transition={{
-              duration: 1,
-              delay:0.5
+              duration: 0.5,
+              ease:"easeOut",
+              delay: index * 0.1,
             }}
             key={index}
           >
