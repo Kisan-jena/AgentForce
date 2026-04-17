@@ -4,9 +4,9 @@ import { IconLayoutSidebar, IconX } from '@tabler/icons-react';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 import { useState } from 'react';
-import Container from '../components/container';
-import { Logo } from '../icons-logos/logo-agen-force';
-import Button from './ui/buttons';
+import { Logo } from '../../icons-logos/logo-agen-force';
+import Container from '../container';
+import Button from '../ui/buttons';
 
 const navLinkks = [
   { name: 'Features', href: '/' },
@@ -27,7 +27,7 @@ export const Navbar = () => {
 export const MobileNavbar = () => {
   const [Open, setOpen] = useState(false);
   return (
-    <div className="flex justify-between py-2 px-4 md:hidden ">
+    <div className="flex justify-between py-2 px-4 md:hidden relative ">
       <Logo />
       <button onClick={() => setOpen(!Open)}>
         <IconLayoutSidebar className="text-neutral-900 size-5" />
@@ -39,7 +39,7 @@ export const MobileNavbar = () => {
           animate={{
             opacity: 1,
             backdropFilter: 'blur(15px)',
-            background:'transparent'
+            background: 'transparent',
           }}
           exit={{
             opacity: 0,
@@ -87,10 +87,25 @@ export const MobileNavbar = () => {
               </motion.div>
             ))}
           </div>
-          <div className="flex justify-end items-center gap-2 pb-4">
+          <motion.div
+            className="flex justify-end items-center gap-2 pb-4"
+            initial={{
+              opacity: 0,
+              x: -8,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{
+              duration: 0.5,
+              delay:1,
+            }}
+            
+          >
             <Button variant="border">Login</Button>
             <Button variant="primary">Signup</Button>
-          </div>
+          </motion.div>
         </motion.div>
       )}
     </div>

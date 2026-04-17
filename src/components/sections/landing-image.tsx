@@ -2,13 +2,13 @@
 
 import { motion } from 'motion/react';
 import Image from 'next/image';
-import { cn } from '../lib/utils';
+import { cn } from '../../lib/utils';
 
 const LandingImage = () => {
   return (
     <div className="relative bg-amber-00 ">
-      <div className="absolute inset-x-0 mask-t-from-10% w-full h-full"></div>
-      <div className="relative min-h-72 sm:min-h-80 md:min-h-100 lg:min-h-140 w-full perspective-distant pt-20 pl-8 lg:pl-20 md:translate-x-20">
+      {/* <div className="absolute inset-x-0 mask-t-from-10% w-full h-full"></div> */}
+      <div className="relative min-h-72 sm:min-h-80 md:min-h-100 lg:min-h-140 w-full perspective-distant pt-20 pl-8 lg:pl-20 overflow-hidden md:overflow-visible md:translate-x-20">
         <motion.div
           className="perspective-[4000px]"
           initial={{
@@ -76,7 +76,7 @@ const LandingImage = () => {
           />
         </motion.div>
       </div>
-      <div className="absolute inset-x-0 bottom-0 h-40 md:h-100 w-full mask-t-from-10% bg-background z-50"></div>
+      {/* <div className="absolute inset-x-0 bottom-0 h-40 md:h-100 w-full mask-t-from-10% bg-background z-50"></div> */}
     </div>
   );
 };

@@ -1,10 +1,8 @@
-import { cn } from '../lib/utils';
-import Container from './container';
-import Heading from './heading';
-import SubHeading from './sub-headings';
-import Button from './ui/buttons';
-import Image from 'next/image';
-import LandingImage from './landing-image';
+import Button from '../ui/buttons';
+import Container from '../container';
+import Heading from '../typography/heading';
+import SubHeading from '../typography/sub-headings';
+import LandingImage from '../sections/landing-image';
 
 const Hero = () => {
   return (
@@ -25,7 +23,7 @@ const Hero = () => {
             View role based demos
           </Button>
         </div>
-        <LandingImage/>
+        <LandingImage />
       </Container>
     </div>
   );

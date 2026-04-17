@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Manrope } from 'next/font/google';
-import { Navbar } from '../components/navbar';
+import { Navbar } from '../components/layout/navbar';
 import { ProviderTheme } from '../providers/theme-provider';
 import './globals.css';
 
