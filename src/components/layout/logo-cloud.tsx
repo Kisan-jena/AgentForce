@@ -14,7 +14,7 @@ const LogoCloud = () => {
   ];
 
   return (
-    <div className="py-32">
+    <div className="mt-28 bg-amber-00">
       <h2 className="text-neutral-700 dark:text-neutral-400 font-medium text-lg text-center max-w-xl mx-auto">
         Trusted by modern operators across industries. <br />{' '}
         <span className="text-neutral-500">
@@ -22,7 +22,7 @@ const LogoCloud = () => {
           From pilot to scale without chaos.
         </span>
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 max-w-3xl bg-amber-0 mt-10 mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 max-w-3xl bg-amber-00 pt-10 mx-auto">
         {logos.map((logo, index) => (
           <motion.div
             initial={{

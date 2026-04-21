@@ -6,8 +6,8 @@ import LandingImage from '../sections/landing-image';
 
 const Hero = () => {
   return (
-    <div className="pt-10 bg-amber-00  md:pt-20 lg:pt-32 px-4 xl:px-0">
-      <Container>
+    <div className="pt-10 bg-amber-00 md:pt-20 lg:pt-32 px-4 xl:px-0 ">
+      <Container className="">
         <Heading as="h1">
           Agents that do the work <br /> Approvals that keep you safe.
         </Heading>
