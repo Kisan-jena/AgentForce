@@ -6,7 +6,7 @@ import { cn } from '../../lib/utils';
 
 const LandingImage = () => {
   return (
-    <div className="relative overflow-hidden bg-amber-0 [clip-path:inset(-200vw_-200vw_0_-200vw)]">
+    <div className="relative overflow-hiden bg-amber-0 [clip-path:inset(-200vw_-200vw_0_-200vw)]">
       <div className="absolute inset-x-0 mask-t-from-10% w-full h-full z-50"></div>
       <div className="relative min-h-72 sm:min-h-80 md:min-h-100 lg:min-h-140 w-full perspective-distant pt-20 pl-8 lg:pl-20 bg-amber-00 md:translate-x-20">
         <motion.div

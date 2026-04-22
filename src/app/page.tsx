@@ -1,5 +1,5 @@
-import Features from '../components/sections/features';
 import LogoCloud from '../components/layout/logo-cloud';
+import Features from '../components/sections/features/Index';
 import Hero from '../components/sections/hero';
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <div className="min-h-screen">
       <Hero />
       <LogoCloud />
-      <Features/>
+      <Features />
     </div>
   );
 };
