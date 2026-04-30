@@ -1,6 +1,6 @@
+import Features from '../components/layout/features';
+import Hero from '../components/layout/hero';
 import LogoCloud from '../components/layout/logo-cloud';
-import Features from '../components/sections/features/Index';
-import Hero from '../components/sections/hero';
 
 const Home = () => {
   return (

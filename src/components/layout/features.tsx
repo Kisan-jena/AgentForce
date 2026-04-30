@@ -1,17 +1,17 @@
 import { Plus } from 'lucide-react';
-import Container from '../../container';
-import Heading from '../../typography/heading';
-import SubHeading from '../../typography/sub-headings';
+import Container from '../container';
+import { SkeletonOne } from '../sections/features/first';
+import { SkeletonTwo } from '../sections/features/secound';
+import { SkeletonThree } from '../sections/features/third';
+import Heading from '../typography/heading';
+import SubHeading from '../typography/sub-headings';
 import {
   Card,
   CardContent,
   CardCTA,
   CardSkeleton,
   CardTitle,
-} from '../../ui/card';
-import {SkeletonOne} from './first';
-import { SkeletonTwo } from './secound';
-import { SkeletonThree } from './third';
+} from '../ui/card';
 
 const Features = () => {
   return (
@@ -27,10 +27,10 @@ const Features = () => {
         </SubHeading>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-10 md:my-20">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-10 md:my-20">
         <Card className="rounded-tl-3xl rounded-bl-3xl">
           <CardSkeleton>
-            <SkeletonOne/>
+            <SkeletonOne />
           </CardSkeleton>
           <CardContent className="flex bg-amber-00 justify-between">
             <CardTitle className="bg-red-00">
@@ -46,7 +46,7 @@ const Features = () => {
 
         <Card>
           <CardSkeleton>
-            <SkeletonTwo/>
+            <SkeletonTwo />
           </CardSkeleton>
           <CardContent className="flex justify-between">
             <CardTitle>Automate Handoffs, Reduce Ops Friction</CardTitle>
@@ -60,7 +60,7 @@ const Features = () => {
 
         <Card className="rounded-br-3xl rounded-tr-3xl">
           <CardSkeleton>
-            <SkeletonThree/>
+            <SkeletonThree />
           </CardSkeleton>
           <CardContent className="flex justify-between">
             <CardTitle>Approvals, Guardrails, and Full Auditability</CardTitle>

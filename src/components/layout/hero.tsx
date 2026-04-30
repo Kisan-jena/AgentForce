@@ -1,8 +1,8 @@
-import Button from '../ui/buttons';
 import Container from '../container';
+import LandingImage from '../ui/image-card';
 import Heading from '../typography/heading';
 import SubHeading from '../typography/sub-headings';
-import LandingImage from '../sections/landing-image';
+import Button from '../ui/buttons';
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
             View role based demos
           </Button>
         </div>
-        <LandingImage />
+        <LandingImage image1="/hero2.png" image2="/hero.png" />
       </Container>
     </div>
   );

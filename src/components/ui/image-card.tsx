@@ -4,9 +4,20 @@ import { motion } from 'motion/react';
 import Image from 'next/image';
 import { cn } from '../../lib/utils';
 
-const LandingImage = () => {
+interface LandingImageProps {
+  className?: string;
+  image1: string;
+  image2: string;
+}
+
+const LandingImage = ({ className, image1, image2 }: LandingImageProps) => {
   return (
-    <div className="relative overflow-hiden bg-amber-0 [clip-path:inset(-200vw_-200vw_0_-200vw)]">
+    <div
+      className={cn(
+        'relative overflow-hiden bg-amber-0 [clip-path:inset(-200vw_-200vw_0_-200vw)]',
+        className
+      )}
+    >
       <div className="absolute inset-x-0 mask-t-from-10% w-full h-full z-50"></div>
       <div className="relative min-h-72 sm:min-h-80 md:min-h-100 lg:min-h-140 w-full perspective-distant pt-20 pl-8 lg:pl-20 bg-amber-00 md:translate-x-20">
         <motion.div
@@ -28,7 +39,7 @@ const LandingImage = () => {
           }}
         >
           <Image
-            src="/hero2.png"
+            src={image1}
             alt="AgentForce product preview"
             height={1080}
             width={1920}
@@ -62,7 +73,7 @@ const LandingImage = () => {
           }}
         >
           <Image
-            src="/hero.png"
+            src={image2}
             alt="AgentForce product preview"
             height={1080}
             width={1920}
