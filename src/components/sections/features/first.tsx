@@ -12,7 +12,7 @@ import { cn } from '../../../lib/utils';
 export const SkeletonOne = () => {
   return (
     <div
-      className="perspective-distant rotate-z-15 -rotate-y-20 rotate-x-30 scale-[1.2] h-full w-full -translate-x-1 -translate-y-10 mask-radial-from-30% mask-r-from-50%"
+      className="perspective-distant rotate-z-30 -rotate-y-20 rotate-x-35 scale-[1.2] h-full w-full -translate-x-3 -translate-y-14 mask-radial-from-40% mask-r-from-50%"
     >
       <SkeletonCard
         className="absolute bottom-20 left-4 max-w-[80%] z-10"
